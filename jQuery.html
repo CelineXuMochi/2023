@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunset Gallery</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+  <!-- Include jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- Include your external JavaScript file -->
+  <script src="path/to/script.js"></script>
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      animation: gradientAnimation 15s infinite;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background: linear-gradient(45deg, #ff8a00, #e52e71);
+      }
+      25% {
+        background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+      }
+      50% {
+        background: linear-gradient(45deg, #43e97b, #38f9d7);
+      }
+      75% {
+        background: linear-gradient(45deg, #c471f5, #fa71cd);
+      }
+      100% {
+        background: linear-gradient(45deg, #ffc3a0, #ffafbd);
+      }
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.3); /* Transparent black */
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    nav a {
+      color: #fff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: #333;
+    }
+
+    section {
+      padding: 20px;
+      margin: 20px;
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Style rules */
+    p, h1, h2, h3 {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-style: initial;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+
+    /* @font-face rule for web font */
+    @font-face {
+      font-family: 'CustomFont';
+      src: url('path/to/custom-font.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    /* Semi-sphere at the bottom */
+    .semi-sphere {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+
+    .card {
+      width: 400px;
+      background-color: #fff,0.1; /* Set your desired background color */
+      border-radius: 40px; /* Add rounded corners for a card-like appearance */
+      box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+      overflow: hidden; /* Ensure content doesn't overflow the card */
+      margin: 40px; /* Add margin for spacing between cards */
+    }
+
+    .card-content {
+      padding: 40px; /* Add padding to the card content for spacing */
+      color: #fff;
+    }
+    body.dark-mode {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Light text color */
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="SunSetHome.html">Sunset Gallery</a></h1>
+    <!-- Dark/Light mode switch -->
+    <button id="mode-switch">Toggle Dark Mode</button>
+  </header>
+
+  <nav>
+      <li><a href="art.html">Art</a></li>
+      <li><a href="science.html">Science</a></li>
+  </nav>
+
+  
+    <h2>Sunset Art</h2>
+    <p>In art presences, sunset has been an obsession to many artists. Here would be some art pieces that I found very interesting:</p>
+
+    <section id="art">
+    <!-- Art section content -->
+    <div class="card">
+      <h2>The Weather Project</h2>
+      <div class="card-content"><p>The Weather Project is an piece that I personally found very attracted to. It is an spatial installation art mde by Olafur Eliasson.</p>
+      <p>Eliasson's ability to fuse art, science, and natural phenomena reached its peak when he began creating large-scale immersive installations. For his most famous installation, The weather project, the enormous Turbine Hall at the Tate Modern in London, was transformed by Eliasson into an artificial environment.  Eliasson produced a massive false sun with a brilliant glow using a simple arrangement of 200 bulbs, arranged in a semicircle and reflected from a mirrored ceiling.</p>
+    <img src="art-weatherpr1.webp" alt="Artwork" width="408" height="500">
+    <!-- Embedded YouTube Video -->
+    <iframe width="800" height="500" src="https://www.youtube.com/embed/IsT9vEpfNq4" frameborder="0" allowfullscreen></iframe>
+    <p>Here is a link to the <a href="https://olafureliasson.net/artwork/the-weather-project-2003/" target="_blank">Weather Project</a>.
+  </div></div>
+
+  <section id="art">
+    <!-- Art section content -->
+    <div class="card">
+      <h2>Timelapse</h2>
+      <div class="card-content"><p>Timelapse is also an installation peoject, but quite recent. It is consist with a series of artisitic explorations of captureing the time and state of minds.</p>
+      <p>EInside the museum, Sze arranged a path of unexpected encounters: a pendulum hovering above the fountain on the rotunda floor, an installation tucked into a hallway in front of the freight elevator. These quiet gestures scored visitors’ progress to the top level of the rotunda, where an immersive environment comprising new works of sculpture, painting, installation, and sound awaited them. These expansive sequence of eight bays were connected by a river of videos that traveled across, above, and behind the works on view, forming a site-specific horizon line of moving images.</p>
+    <img src="art-timelapse.jpeg" alt="Artwork" width="500" height="500">
+    <!-- Embedded YouTube Video -->
+    <iframe width="800" height="500" src="https://www.youtube.com/embed/KnqpcaD04hs" frameborder="0" allowfullscreen></iframe>
+    <p>Here is a link to the <a href="hhttps://www.guggenheim.org/exhibition/sarah-sze-timelapse" target="_blank">Timelapse</a>.
+  </div></div>
+
+  
+
+</body>
+</html>
